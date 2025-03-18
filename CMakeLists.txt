@@ -46,7 +46,6 @@ add_executable(swift-sdl-boilerplate src/main.swift)
 # for each dependency in dependencies/ (so just one called SDL/ for now) then place the modulemap inside that directory,
 # pointed to the correct header location(s) in the appropriate dependency. One modulemap directory/file for each dependency.
 #
-# But this is boilerplate so we do it the quick way.
 target_include_directories(swift-sdl-boilerplate PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>)
 
 # Link to the SDL3 library
